@@ -1,0 +1,28 @@
+{
+  "name": "CloudBoard",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chiragpat/CloudBoard",
+  "authors": [
+    "Chirag Patel <chiragpat@gmail.com>"
+  ],
+  "description": "Collaborative White Board",
+  "main": "app.js",
+  "keywords": [
+    "Collaborative",
+    "white",
+    "board"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "/public/js/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2"
+  }
+}
