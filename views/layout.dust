@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{+title}CloudBoard{/title}</title>
+    {+css/}
+  </head>
+  <body>
+    {+body/}
+    {+script/}
+  </body>
+</html>

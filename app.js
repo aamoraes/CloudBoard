@@ -5,6 +5,7 @@ var express = require('express'),
     path    = require('path'),
     dust = require('consolidate').dust,
     MongoStore = require('connect-mongo')(express),
+    routes = require('./lib/routes.js'),
     server;
 
 
@@ -32,6 +33,7 @@ app.use(express.session({
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+routes(app);
 // development only
 if ('development' === app.get('env')) {
   app.use(express.errorHandler());
