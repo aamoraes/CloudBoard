@@ -4,7 +4,8 @@ var express = require('express'),
     http    = require('http'),
     path    = require('path'),
     dust = require('consolidate').dust,
-    MongoStore = require('connect-mongo')(express);
+    MongoStore = require('connect-mongo')(express),
+    server;
 
 
 var app = express();
@@ -35,3 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' === app.get('env')) {
   app.use(express.errorHandler());
 }
+
+server = http.createServer(app).listen(app.get('port'), function () {
+  console.log('Express server listening on port ' + app.get('port'));
+});
