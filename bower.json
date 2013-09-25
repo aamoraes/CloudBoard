@@ -22,7 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.0.3",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "quojs": "~2.3.6"
   }
 }

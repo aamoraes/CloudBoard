@@ -6,7 +6,7 @@
   </head>
   <body>
     {+body/}
-    <script src='/js/bower_components/jquery/jquery.min.js'></script>
+    <script src='/js/bower_components/quojs/quo.js'></script>
     <script src='/js/bower_components/underscore/underscore-min.js'></script>
     {+script/}
   </body>
