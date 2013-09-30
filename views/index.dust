@@ -5,7 +5,14 @@
 {/css}
 
 {<body}
-<div id="board-wrapper">
-  <canvas id="board"></canvas>
+<div class="container pure-g">
+  <div id="board-wrapper" class="pure-g">
+    <canvas id="board"></canvas>
+  </div>  
 </div>
 {/body}
+
+{<script}
+<script src='/js/board.js'></script>
+<script src='/js/index.js'></script>
+{/script}

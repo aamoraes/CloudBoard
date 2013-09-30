@@ -1,5 +1,5 @@
 (function () {
   'use strict';
-
-  new Board(document.getElementById('board'));
+  var canvas = document.getElementById('board');
+  new Board(canvas);
 }) ();
