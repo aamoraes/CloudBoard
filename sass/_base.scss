@@ -1,0 +1,13 @@
+@import "pure-min";
+@import "fontawesome";
+@import "button";
+@import "form";
+
+i {
+  font-style: normal;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
