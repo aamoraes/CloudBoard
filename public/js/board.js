@@ -5,8 +5,8 @@
     options = options || {};
     this.element = element;
     this.$$element = $$(element);
-    this.widthParentScale = options.widthParentScale || 0.75;
-    this.heightWindowScale = options.heightWindowScale || 0.9;
+    this.widthParentScale = options.widthParentScale || 0.95;
+    this.heightWindowScale = options.heightWindowScale || 0.85;
     this.setDimensions();
     this.setupEvents();
   }
