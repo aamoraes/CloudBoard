@@ -1,0 +1,16 @@
+<div id="board-container" class="pure-g">
+  <div class="toolbox ui icon buttons">
+    <div class="ui icon button" data-tool="pencil">
+      <i class="pencil icon"></i>
+    </div>
+    <div class="ui icon button" data-tool="eraser">
+      <i class="eraser icon"></i>
+    </div>
+    <div class="ui icon button" data-tool="undo">
+      <i class="undo icon"></i>
+    </div>
+  </div>
+  <div id="board-wrapper" class="pure-g">
+   <canvas id="board"></canvas>
+  </div>
+</div>

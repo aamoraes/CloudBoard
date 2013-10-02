@@ -5,7 +5,9 @@
     {+css/}
   </head>
   <body>
-    {+body/}
+    <div class="container pure-g">
+      {+body/}
+    </div>
     <script src='/js/bower_components/quojs/quo.js'></script>
     <script src='/js/bower_components/underscore/underscore-min.js'></script>
     {+script/}

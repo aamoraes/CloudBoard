@@ -3,8 +3,20 @@
   border: 1px solid #CCC;
   box-shadow: inset 0px 0px 4px #aaa;
   margin: 0 auto;
+  margin-top: 2em;
 }
 
 #board-container, #board-wrapper {
+  position: relative;
   width: 100%;
+}
+
+.toolbox .icon {
+  font-size: 1.25em;
+}
+
+.toolbox {
+  position: absolute;
+  right: 1.5%;
+  z-index: 100;
 }

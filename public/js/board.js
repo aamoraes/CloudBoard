@@ -6,7 +6,7 @@
     this.element = element;
     this.$$element = $$(element);
     this.widthParentScale = options.widthParentScale || 0.95;
-    this.heightWindowScale = options.heightWindowScale || 0.85;
+    this.heightWindowScale = options.heightWindowScale || 0.87;
     this.setDimensions();
     this.setupEvents();
   }
@@ -18,6 +18,39 @@
       $$(window).on('resize', function () {
         self.setDimensions();
       });
+
+      $$('.toolbox .button').on('click', function (e) {
+        e.preventDefault();
+        self.setTool($$(this).attr('data-tool'), this);
+      });
+
+      $$('.toolbox .button').on('tap', function (e) {
+        e.preventDefault();
+        self.setTool($$(this).attr('data-tool'), this);
+      });
+    },
+
+    setTool: function (tool, selectedTool) {
+      var $$selectedTool;
+      if (!selectedTool) {
+        $$selectedTool = $$('[data-tool=' + tool + ']');
+        selectedTool = $$selectedTool[0];
+      }
+      else {
+        $$selectedTool = $$(selectedTool);
+      }
+
+      var $$otherButtons = $$selectedTool.siblings('.button');
+
+      $$otherButtons.removeClass('active');
+      $$otherButtons.removeClass('green');
+      $$selectedTool.addClass('green active');
+      this._setTool(tool);
+    },
+
+
+    _setTool: function (tool) {
+      console.log(tool);
     },
 
     setDimensions: function () {
